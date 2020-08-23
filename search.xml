@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2Farchives%2Fd87f7e0c.html</url>
-    <content type="text"></content>
+    <title><![CDATA[入职一年感想]]></title>
+    <url>%2Farchives%2Ff969517f.html</url>
+    <content type="text"><![CDATA[不知不觉，都已经工作一年了]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[LeetCode-3. Longest Substring Without Repeating Characters]]></title>
