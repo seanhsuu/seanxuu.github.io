@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2Farchives%2Fd87f7e0c.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode-3. Longest Substring Without Repeating Characters]]></title>
+    <url>%2Farchives%2Fc4d05eca.html</url>
+    <content type="text"><![CDATA[https://leetcode.com/problems/longest-substring-without-repeating-characters/ Given a string, find the length of the longest substring without repeating characters. 题目大意： 求出没有重复字母的最长字串的长度。 代码： 123456789101112131415161718192021222324class Solution &#123; public int lengthOfLongestSubstring(String s) &#123; if (s.length() &lt; 2) &#123; return s.length(); &#125; int maxLen = 1, start = 0, end = 1, len = 1; String curStr; while (end &lt; s.length()) &#123; curStr = s.substring(start, end); if (curStr.contains(String.valueOf(s.charAt(end)))) &#123; start = s.indexOf(s.charAt(end), start) + 1; end++; continue; &#125; len = end - start + 1; if (len &gt; maxLen) &#123; maxLen = len; &#125; end++; &#125; return maxLen; &#125;&#125;]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode-2. Add Two Numbers]]></title>
+    <url>%2Farchives%2F32c9af6f.html</url>
+    <content type="text"><![CDATA[https://leetcode.com/problems/add-two-numbers/ You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. 题目大意： 有两个链表，它们表示逆序的两个非负数。计算出两个数的和之后，同样逆序输出作为一个链表。 需要注意一点：有进位 代码： 123456789101112131415161718192021222324252627282930313233343536373839404142/** * Definition for singly-linked list. * public class ListNode &#123; * int val; * ListNode next; * ListNode(int x) &#123; val = x; &#125; * &#125; */class Solution &#123; public ListNode addTwoNumbers(ListNode l1, ListNode l2) &#123; if (l1 == null || l2 == null) &#123; return null; &#125; ListNode temp = new ListNode(0); ListNode result = temp; int value1 = 0; int value2 = 0; while (l1 != null &amp;&amp; l2 != null) &#123; value2 = (l1.val + l2.val + value1) % 10; value1 = (l1.val + l2.val + value1) / 10; temp.next = new ListNode(value2); l1 = l1.next; l2 = l2.next; temp = temp.next; if (l1 == null &amp;&amp; l2 == null) &#123; break; &#125; if (l1 == null) &#123; l1 = new ListNode(0); &#125; if (l2 == null) &#123; l2 = new ListNode(0); &#125; &#125; if (value1 != 0) &#123; temp.next = new ListNode(value1); &#125; return result.next; &#125;&#125;]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[推荐一个IT电子书网站]]></title>
+    <url>%2Farchives%2F3ebe3fa9.html</url>
+    <content type="text"><![CDATA[之前在网上冲浪的时候，无意间发现一个IT方面电子书的下载网站https://itbook.download/，然而当时没放在心上。直到最近，做毕业设计的时候要用到神经网络方面的书籍，图书馆又基本借不到，所以就想起来这个网站了。 虽然下载盗版书籍让我有些惭愧，但是应对不时之需还是有点用的。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[消息队列是一个什么东西？]]></title>
+    <url>%2Farchives%2Fd47314cf.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Redis入门]]></title>
+    <url>%2Farchives%2F6a343b7f.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Java中的一些易混淆点总结]]></title>
+    <url>%2Farchives%2F1682a1e.html</url>
+    <content type="text"><![CDATA[abstrcatsleep()与wait()== 与 equals()重写与重载继承与多态try{…}catch{…}finally{…}]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[面试中常用排序算法总结]]></title>
+    <url>%2Farchives%2Fcc73e49b.html</url>
+    <content type="text"><![CDATA[[TOC] 冒泡排序简介分析代码二分排序简介分析代码选择排序简介分析代码希尔排序简介分析代码堆排序简介分析代码桶排序简介分析代码快速排序简介分析代码]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[剑指offer题解]]></title>
+    <url>%2Farchives%2F863370b6.html</url>
+    <content type="text"><![CDATA[[TOC] 线性表数组面试题3：数组中重复的数字 在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。 思路：构造一个辅助数组help，将原数组A中的每个数对应到help数组的下标，第一次对应以后，将help数组中的对应元素+1。如果有重复数字的话，很明显help数组中的对应元素一定大于1。 1234567891011121314// 面试题3：数组中重复的数字public class Solution &#123; public boolean duplicate(int numbers[],int length,int [] duplication) &#123; int [] help = new int [length]; for (int i = 0;i &lt; length;i++)&#123; if(help[numbers[i]]==0)&#123; help[numbers[i]]++; &#125; else &#123;duplication[0]=numbers[i]; return true;&#125; &#125; return false; &#125;&#125; 面试题4：二维数组中的查找 在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。 思路：从左下角开始，比target小的数一定在左下角的上方，比target大的数一定在左下角的右方。所以以左下角为标准，向上挪一步或者向左挪一步。 123456789101112131415161718192021// 面试题4：二维数组中的查找public class Solution &#123; public boolean Find(int target, int[][] array) &#123; if(array==null)&#123; return false; &#125; int row =array.length; int column =array[0].length; int i=row-1; int j=0; while(i&gt;=0&amp;&amp;j&lt;column)&#123; if(target&lt;array[i][j])&#123; i--; &#125;else if(target&gt;array[i][j])&#123; j++; &#125; else return true; &#125; return false; &#125;&#125; 面试题11. 旋转数组的最小数字 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。 输入一个非减排序的数组的一个旋转，输出旋转数组的最小元素。 例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。 NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。 思路：分三种情况，如下， 1.数组为空 ，返回0 2.部分旋转，例如由（1,2,3,4,5）旋转为（3,4,5,1,2），此时只需要遍历数组，找到当前数比前面的数小的数即可。 3.完全旋转，例如由（1,2,3,4,5）旋转为（1,2,3,4,5），此时第一个数最小。 1234567891011121314151617import java.util.ArrayList;public class Solution &#123; public int minNumberInRotateArray(int[] array) &#123; if(array.length==0)&#123; return 0; &#125; for (int i =0;i &lt;array.length-1;i++)&#123; if (array[i]&gt;array[i+1])&#123; return array[i+1]; &#125; &#125; if(array[0]&lt;array[1])&#123; return array[0]; &#125; return 0; &#125;&#125; 面试题21：调整数组顺序使得奇数位于偶数前面 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。 思路：类似于冒泡排序，前偶后奇就两两交换 12345678910111213public class Solution &#123; public void reOrderArray(int[] array) &#123; for (int i = 0; i &lt; array.length - 1; i++) &#123; for (int j = 0; j &lt; array.length - 1 - i; j++) &#123; if (array[j] % 2 == 0 &amp;&amp; array[j + 1] % 2 == 1) &#123; int t = array[j]; array[j] = array[j + 1]; array[j + 1] = t; &#125; &#125; &#125; &#125;&#125; 面试题39：数组中出现超过一半的数字 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。 思路：利用快排进行排序，数组中间那个数一定是要求的数 12345678910111213141516171819202122import java.util.*;import java.util.Arrays;public class Solution &#123; public int MoreThanHalfNum_Solution(int[] array) &#123; // 因为用到了sort，时间复杂度O(NlogN)，并非最优 if (array == null) return 0; Arrays.sort(array, 0, array.length - 1); // 排序，取数组中间那个数 int middle = array[array.length / 2]; int count = 0; // 出现次数 for (int i = 0; i &lt; array.length; ++i) &#123; if (array[i] == middle) ++count; &#125; return (count &gt; array.length / 2) ? middle : 0; &#125;&#125; 面试题40：最小的k个数 输入n个整数，找出其中最小的K个数。例如输入4,5,1,6,2,7,3,8这8个数字，则最小的4个数字是1,2,3,4,。 思路：我觉得这一题依然可以用快排，时间复杂度也只有O(NlogN)。 123456789101112131415import java.util.*;public class Solution &#123; public ArrayList&lt;Integer&gt; GetLeastNumbers_Solution(int[] input, int k) &#123; ArrayList&lt;Integer&gt; result = new ArrayList&lt;&gt;(); if (input == null || k &gt; input.length || k &lt;= 0) return result; Arrays.sort(input); for (int i = 0; i &lt; k; i++) &#123; result.add(input[i]); &#125; return result; &#125;&#125; 面试题42：连续子数组的最大和 HZ偶尔会拿些专业问题来忽悠那些非计算机专业的同学。今天测试组开完会后,他又发话了:在古老的一维模式识别中,常常需要计算连续子向量的最大和,当向量全为正数的时候,问题很好解决。但是,如果向量中包含负数,是否应该包含某个负数,并期望旁边的正数会弥补它呢？例如:{6,-3,-2,7,-15,1,2,2},连续子向量的最大和为8(从第0个开始,到第3个为止)。给一个数组，返回它的最大连续子序列的和，你会不会被他忽悠住？(子向量的长度至少是1) 思路：维护一个temp，将之前累加的和与当前遍历到的值（result）进行对比，如果累加和小于0，则设temp为0，再与result对比。 1234567891011121314151617181920public class Solution &#123; public int FindGreatestSumOfSubArray(int[] array) &#123; if(array== null||array.length == 0)&#123; return 0; &#125; int temp = array[0]; int result = array[0] ; for(int i = 1; i&lt; array.length;i++)&#123; if(temp&lt;0)&#123; temp = 0; &#125; temp+=array[i]; if(temp&gt;=result)&#123; result = temp; &#125; &#125; return result; &#125;&#125; 面试题45：把数组排成最小的数 输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。例如输入数组{3，32，321}，则打印出这三个数字能排成的最小数字为321323。 思路： 12 面试题51：数组中的逆序对 思路： 12 面试题53：数字在排序数组中出现的次数 思路： 12 面试题56：数组中只出现一次的二个数字（56_1）面试题56_2:数组中只有一个数出现一次，其他数字出现三次，求出这个出现一次的数字面试题66：构建乘积数组链表面试题6：从尾到头打印链表 输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。 思路：利用一个辅助栈实现。将链表中的值依次弹出加入辅助栈中。由于栈的后进先出的特点，直接依次弹出所有值即可。 12345678910111213141516171819import java.util.ArrayList;import java.util.Stack;public class Solution &#123; public ArrayList&lt;Integer&gt; printListFromTailToHead(ListNode listNode) &#123; Stack&lt;Integer&gt; stack =new Stack(); while(listNode!=null)&#123; stack.add(listNode.val); listNode = listNode.next; &#125; ArrayList&lt;Integer&gt;integers=new ArrayList&lt;&gt;(stack.capacity()); while(!stack.isEmpty())&#123; integers.add(stack.pop()); &#125; return integers; &#125;&#125; 面试题18_1：在O(1)时间删除链表结点 思路： 12 面试题18_2：删除链表中重复的结点面试题22：链表中倒数第k个结点面试题23：链表中环的入口结点面试题24：反转链表面试题25：合并两个排序的链表面试题35：复杂链表的复制面试题52：两个链表的第一个公共结点字符串面试题4：替换空格面试题12：打印1到最大的n位数面试题20：表示数值的字符串面试题28：字符串的排列面试题43：从1到n整数中1出现的次数面试题50：第一个只出现1次的字符面试题50_2：字符流中第一个不重复的字符面试题58：反转单词顺序以及左旋转字符串面试题67：把字符串转换成整数面试题53：正则表达式匹配栈和队列面试题7：用两个栈实现队列 思路： 12 面试题21：包含min函数的栈 思路： 12 面试题22：栈的压入、弹出序列 思路： 12 树树的算法题的一个重要思想就是遍历。 面试题6：重建二叉树 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。 思路：前序遍历序列的第一个数字是整棵树的根节点，中序遍历序列以根节点为分界点将整个序列分为左子树和右子树两个部分（左边就是左子树，右边就是右子树）。所以只要递归求出结果即可。 12345678910111213141516171819202122232425262728/** * Definition for binary tree * public class TreeNode &#123; * int val; * TreeNode left; * TreeNode right; * TreeNode(int x) &#123; val = x; &#125; * &#125; */public class Solution &#123; public TreeNode reConstructBinaryTree(int [] pre,int [] in) &#123; TreeNode root=reConstructBTree(pre,0,pre.length-1,in,0,in.length-1); return root; &#125; private TreeNode reConstructBTree(int [] pre,int startPre,int endPre,int [] in,int startIn,int endIn) &#123; if(startPre&gt;endPre||startIn&gt;endIn) return null; TreeNode root=new TreeNode(pre[startPre]); for(int i=startIn;i&lt;=endIn;i++) if(in[i]==pre[startPre])&#123; root.left=reConstructBTree(pre,startPre+1,startPre+i-startIn,in,startIn,i-1); root.right=reConstructBTree(pre,i-startIn+startPre+1,endPre,in,i+1,endIn); &#125; return root; &#125;&#125; 面试题18：树的子结构 ​ 输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构） 思路：主要分为两部分。第一部分，判断各种特殊情况：1.树是否为空 2.某一棵树的根节点是否在另一棵树里存在，并且是其子树的根节点。第二部分，遍历。 1234567891011121314151617181920212223242526272829303132333435363738394041public class Solution &#123; public static boolean HasSubtree(TreeNode root1, TreeNode root2) &#123; boolean result = false; //当Tree1和Tree2都不为空的时候，才进行比较。否则直接返回false if (root2 != null &amp;&amp; root1 != null) &#123; //如果找到了对应Tree2的根节点的点 if(root1.val == root2.val)&#123; //以这个根节点为为起点判断是否包含Tree2 result = doesTree1HaveTree2(root1,root2); &#125; //如果找不到，那么就再去root的左儿子当作起点，去判断时候包含Tree2 if (!result) &#123; result = HasSubtree(root1.left,root2); &#125; //如果还找不到，那么就再去root的右儿子当作起点，去判断时候包含Tree2 if (!result) &#123; result = HasSubtree(root1.right,root2); &#125; &#125; //返回结果 return result; &#125; public static boolean doesTree1HaveTree2(TreeNode node1, TreeNode node2) &#123; //如果Tree2已经遍历完了都能对应的上，返回true if (node2 == null) &#123; return true; &#125; //如果Tree2还没有遍历完，Tree1却遍历完了。返回false if (node1 == null) &#123; return false; &#125; //如果其中有一个点没有对应上，返回false if (node1.val != node2.val) &#123; return false; &#125; //如果根节点对应的上，那么就分别去子节点里面匹配 return doesTree1HaveTree2(node1.left,node2.left) &amp;&amp; doesTree1HaveTree2(node1.right,node2.right); &#125; 面试题19：二叉树镜像 思路： 12 面试题23：从上往下打印二叉树 思路： 12 面试题24：二叉搜索树的后序遍历 思路： 12 面试题25：二叉树中和为某一值的路径 思路： 12 面试题27：二叉搜索树与双向链表 思路： 12 面试题39：二叉树的深度 思路： 12 面试题50：树中两个节点的最低公共祖先 思路： 12 面试题58：二叉树的下一个节点 思路： 12 面试题59：对称的二叉树 思路： 12 面试题60：把二叉树打印成多行 思路： 12 面试题61：按之字形顺序打印二叉树 思路： 12 面试题62：序列化二叉树 思路： 12 面试题63：二叉搜索树的第k个结点 思路： 12 面试题65：滑动窗口的最大值 思路： 12 查找和排序面试题8：旋转数组中的最小数字 思路： 12 动态规划面试题9：斐波那契数列 大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。 n&lt;=39 思路：第一种方法，简单递归。小数据量还OK，大一点的数据耗时就很久了，时间复杂度是O(2^n)。第二种方法，动态规划。求第n项，需要前n-1和n-2项来确定第n项的值。可以通过建立两个数不断记录第n-1和n-2项，直到第n项的时候就能够得到该题的解。 123456789101112131415161718192021222324252627282930313233343536//简单递归public class Solution &#123; public int Fibonacci(int n) &#123; int f0 = 0; int f1 = 1; int fn = 0; if (n == 0) return f0; if (n == 1) return f1; for (int i = 2; i &lt;= n; i++) &#123; fn = f1 + f0; f0 = f1; f1 = fn; &#125; return fn; &#125;&#125;//动态规划public class Solution &#123; public int Fibonacci(int n) &#123; int[] result = &#123; 0, 1 &#125;; if (n &lt; 2) return result[n]; int maxNum = 1; int minNum = 0; int answer = 0; for (int i = 2; i &lt;= n; i++) &#123; answer = maxNum + minNum; minNum = maxNum;//用作记录 maxNum = answer;//用作记录 &#125; return answer; &#125;&#125; 面试题31：连续子数组的最大和 思路： 12 面试题34：丑数 把只包含因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为它包含因子7。 习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。 思路：两种思路，第一种就是暴力法，不必多言；第二种是动态规划，后面的丑数一定是由前面的丑数乘以2、3或5得到。所以第n个丑数一定是由前n-1个数中的某3个丑数（分别记为i2、i3、i5）分别乘以2、3或者5得到的数中的最小数，i2，i3，i5有个特点，即分别乘以2、3、5得到的数一定含有比第n-1个丑数大（可利用反证法：否则第n-1个丑数就是它们当中的一个）最小丑数，即第n个丑数由ugly[i2] 2、ugly[i3] 3、ugly[i5] * 5中的最小数得出。让它们分别和第n个丑数比较，若和第n个丑数相等，则更新它们的值。 1234567891011121314151617public class Solution &#123; public static int GetUglyNumber_Solution(int index) &#123; if (index == 0) return 0; int []ugly = new int[index]; ugly[0] = 1; int i2,i3,i5; i2 = i3 = i5 = 0; for (int i = 1;i &lt; index;i ++) &#123; ugly[i] = Math.min(ugly[i2] * 2, Math.ugly(res[i3] * 3, ugly[i5] * 5)); if (ugly[i] == ugly[i2] * 2) i2 ++; if (ugly[i] == ugly[i3] * 3) i3 ++; if (ugly[i] == ugly[i5] * 5) i5 ++; &#125; return ugly[index - 1]; &#125; &#125;&#125; 面试题45：圆圈中最后剩下的数字 思路： 12 回朔法面试题66：矩阵中的路径 思路： 12 面试题67：机器人的运动范围 思路： 12 细节实现题面试题10：二进制中1的个数 思路： 12 面试题11：数值的整数次方 思路： 12 面试题20：顺时针打印矩阵 思路： 12 面试题41：和为s的两个数字VS和为s的连续正数序列 思路： 12 面试题43：n哥骰子的点数 思路： 12 面试题44：扑克牌顺子 思路： 12 面试题46：求1+2+3+…….+n 求1+2+3+…+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。 思路： 利用递归的方法。 1234567public class Solution &#123; public int Sum_Solution(int n) &#123; int sum=n; boolean result=(n&gt;0)&amp;&amp;((sum+=Sum_Solution(n-1))&gt;0); return sum; &#125;&#125; 面试题47：不用加减乘除做加法 写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、/四则运算符号。 思路：涉及JAVA的位运算。 &lt;&lt; : 左移运算符，num &lt;&lt; 1,相当于num乘以2 >&gt; : 右移运算符，num &gt;&gt; 1,相当于num除以2 加法的运算过程其实分为两步，第一步，相加各位的值；第二步，计算进位，并对第一步得出的值进行修改。 由此，二进制每位相加就是取异或的过程；每位相与在左移一位即进位操作；重复这两步，直至跳出循环。 12345678910public class Solution &#123; public int Add(int num1,int num2) &#123; while (num2!=0) &#123; int temp = num1^num2; num2 = (num1&amp;num2)&lt;&lt;1; num1 = temp; &#125; return num1; &#125;&#125; 面试题64：数据流中的中位数 思路： 12]]></content>
+      <categories>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>剑指offer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JVM学习笔记之内存模型与线程]]></title>
+    <url>%2Farchives%2Fbfe2bfe1.html</url>
+    <content type="text"><![CDATA[内存模型（用一种Java内存模型来屏蔽各种硬件和操作系统的内存访问差异，以实现让Java程序在各种平台下都能达到一致的内存访问效果） 主内存与工作内存 主要目标：定义程序中各个变量（实例字段、静态字段、构成数组对象的元素，但不包括局部变量与方法参数）的访问规则 所有变量存储在主内存，每条线程有自己的工作内存 工作内存保存了被该线程使用到的变量的主内存副本拷贝 线程对变量的所有操作都必须在工作内存中进行 不同的线程之间无法直接访问对方工作内存中的变量 线程间变量值的传递需要通过主内存来完成 内存间交互操作 lock unlock read load use assign store write 对于volatile型变量的特殊规则（最轻量级同步机制） 对所有线程的可见性： 禁止指令重排序优化： 对于long、double型变量的特殊规则 允许虚拟机实现选择可以不保证64位数据类型的load、store、read、write这四个操作的原子性 原子性、可见性、有序性 先行发生原则 Java与线程 线程的实现 各个线程既可以共享进程资源，又可以独立调度 Thread类的所有关键方法都声明为Native（这个方法没有使用或无法使用平台无关的手段来实现）的 实现线程的方式 使用内核线程实现 内核线程是直接由操作系统内核支持的线程，由内核来完成线程切换，内核通过操纵调度器对线程进行调度，并负责将线程的任务映射到各个处理器上 轻量级进程：每个轻量级进程都由一个内核线程支持，是一个独立的调度单元 局限性：进行系统调用，代价相对较高；消耗内核资源 使用用户线程实现 一个线程不是内核线程，它就是用户线程（在用户态中完成各项操作，不需要内核的帮助） 混合实现 用户线程与轻量级进程的数量比：N:M Java线程的实现：不同操作系统具有不同的实现方式 线程调度：系统为线程分配处理器使用权的过程 协同式 执行时间由线程本身来控制 好处：实现简单 坏处：线程执行时间不可控 抢占式（Java使用的线程调度方式） 执行时间由系统分配 状态转换：五种状态 新建 运行 无限期等待 限期等待 阻塞 结束 参考资料：《深入理解java虚拟机》——周志明 著]]></content>
+      <categories>
+        <category>JVM</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode题解-136]]></title>
+    <url>%2Farchives%2F25a125af.html</url>
+    <content type="text"><![CDATA[123456789class Solution &#123; public int singleNumber(int[] nums) &#123; int result =0; for(int i = 0; i&lt;nums.length;i++)&#123; result = result^nums[i]; &#125; return result; &#125;&#125;]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode题解-104]]></title>
+    <url>%2Farchives%2Fe0821740.html</url>
+    <content type="text"><![CDATA[123456789101112131415161718192021222324/** * Definition for a binary tree node. * public class TreeNode &#123; * int val; * TreeNode left; * TreeNode right; * TreeNode(int x) &#123; val = x; &#125; * &#125; */class Solution&#123; public int maxDepth(TreeNode root) &#123; if(root==null) return 0; int leftDepth = maxDepth(root.left); int rightDepth = maxDepth(root.right); int bigger = Math.max(leftDepth, rightDepth); return bigger+1; &#125;&#125;]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode题解-27]]></title>
+    <url>%2Farchives%2Feddde878.html</url>
+    <content type="text"><![CDATA[12345678910111213141516class Solution &#123; public int removeElement(int[] nums, int val) &#123; //遍历数组，用数组最后元素替换相同元素，并缩短数组长度 int n=nums.length; int i=0; while(i&lt;n) &#123; if(nums[i]==val) &#123; nums[i]=nums[n-1]; n--; &#125; else &#123; i++; &#125; &#125; return n; &#125;&#125;]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode题解-94]]></title>
+    <url>%2Farchives%2F97206009.html</url>
+    <content type="text"><![CDATA[12345678910111213141516171819202122232425/** * Definition for a binary tree node. * public class TreeNode &#123; * int val; * TreeNode left; * TreeNode right; * TreeNode(int x) &#123; val = x; &#125; * &#125; */class Solution &#123; public ArrayList&lt;Integer&gt; inorderTraversal(TreeNode root) &#123; ArrayList&lt;Integer&gt; res = new ArrayList&lt;Integer&gt;(); helper(root, res); return res;&#125;private void helper(TreeNode root, ArrayList&lt;Integer&gt; res)&#123; if(root == null) return; helper(root.left,res); res.add(root.val); helper(root.right,res);&#125;&#125;]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode题解-26]]></title>
+    <url>%2Farchives%2F9adad8ee.html</url>
+    <content type="text"><![CDATA[1234567891011121314class Solution &#123; public int removeDuplicates(int[] nums) &#123; int j = 0; int sum = 1; for ( int i = 1; i &lt; nums.length; i ++)&#123; if (nums[i] != nums[j])&#123; nums[j+1]=nums[i]; sum++; j++; &#125; &#125; return sum; &#125;&#125;]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Win10环境下完美卸载MySQL]]></title>
+    <url>%2Farchives%2F59a4b6ee.html</url>
+    <content type="text"><![CDATA[​ 最近在使用MySQL的时候，遇到一个很棘手的问题——MySQL的服务总是开启不了。在网上搜索了多种办法，依然没法解决。所以我想干脆就重装MySQL算了。由于之前听说MySQL容易卸载不干净，所以我就想了一下之前完美卸载multisim的方法和步骤，照葫芦画瓢。最后还真的成功了！具体方法如下： 1. 停止MySQL服务。 任务管理器→服务→找到MySQL服务，停止掉。 2. 卸载MySQL server。 在控制面板中卸载。 3. 将MySQL安装目录下的MySQL文件夹删除。 如果删除不掉，就利用文件粉碎器粉碎。 打开注册表，分别找到以下文件夹,删除（如果没有相应的文件夹，就忽略掉） HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\MySQL HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\Eventlog\Application\MySQL HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL** 4. 删除C:\ProgramData\MySQL 文件夹注意这个文件夹默认是隐藏的。 5. 为确保万无一失，需要再检查MySQL服务是否存在，若存在便利用在cmd中输入“sc delete xxxxx”删除服务（xxxxx是你要删除的服务名）。6. 最后便可以重装MySQL了。]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>完美卸载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode题解 771. Jewels and Stones]]></title>
+    <url>%2Farchives%2Fa83ed523.html</url>
+    <content type="text"><![CDATA[You’re given strings J representing the types of stones that are jewels, and S representing the stones you have. Each character in Sis a type of stone you have. You want to know how many of the stones you have are also jewels. The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so &quot;a&quot; is considered a different type of stone from &quot;A&quot;. Example 1: 12Input: J = &quot;aA&quot;, S = &quot;aAAbbbb&quot;Output: 3 Example 2: 12Input: J = &quot;z&quot;, S = &quot;ZZ&quot;Output: 0 Note: S and J will consist of letters and have length at most 50. The characters in J are distinct. Solution: 12345678910111213141516171819202122232425class Solution &#123; public int numJewelsInStones(String J, String S) &#123; char [] s = new char[100];//新建一个字符数组来存储Jewels中的每一个元素 int counter = 0;//计数器 for (int i = 0; i &lt; J.length(); i++)&#123;//将Jewels中的元素取出，放入字符数组s中 s[i] = J.charAt(i); &#125; for(int j = 0; j &lt; S.length(); j++)&#123;//大循环：对Stone进行遍历 for (int k = 0; k &lt; J.length(); k++)&#123;//小循环：用s中的每一个元素和Stone中的元素比较 if (s[k] == S.charAt(j)) counter++; &#125; &#125; return counter; //返回计数器&#125;&#125;/*反思：1.大小循环这里一开始没有想明白，导致遍历比较时候总是出错。2.没能充分理解“字符串是对象”3.对char 和 String 的区别不是很清楚*/]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LeetCode题解 1.Two Sum]]></title>
+    <url>%2Farchives%2F3757d865.html</url>
+    <content type="text"><![CDATA[Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution. Example: Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9,return [0, 1]. Solution: 12345678910111213141516171819202122class Solution &#123; public int[] twoSum(int[] nums, int target) &#123; int [] result = new int [2]; for(int i = 0; i &lt; nums.length-1; i++)&#123; for (int j = i + 1; j &lt; nums.length; j++)&#123; if (nums[i] + nums[j] == target)&#123; result[0]=i; result[1]=j; &#125; &#125; &#125; return result; &#125; &#125;/*反思：1.数组掌握不牢靠2.对于常见错误不能很好调试3.数组的赋值方法应该彻底了解*/]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[关于当下自我状况的思考]]></title>
+    <url>%2Farchives%2Fe182c17d.html</url>
+    <content type="text"><![CDATA[问题的出现​ 在大学将近三年的学习中，我学过的科目越来越多，难度也依次加大，但是自己的学习方法好像没有特别大的改进，所以效率并不算太高，学习的时候没有了高中时候的那种目标感，并不清楚自己学习这些知识的用处是什么。难道仅仅是为了毕业？不，这不是我想要的！我不想白白把自己的时间荒废在一些无趣的事情上面。所以我开始想了一想我现在的处境以及面临的问题。 ​ 虽然我的专业名称是生物医学工程，但是仿佛应该叫做生物医学电子信息工程，因为大多数时候我所接受的教育都在告诉我如何通过电子信息工程方法去解决医学问题。这就让我产生了第一个疑惑：电子工程里的各种思维方法能不能支撑我在这个专业里走的更远？ 我的第二个疑惑其实很简单：电子信息工程这个大的框架下还有许多小的方向，那么我是不是也应该在课下学习更多不同的学科知识，拓宽自己的眼界？ 关于这些问题的一些思考第一个问题​ 我所理解到的工科思维仅仅停留在：用趁手的榔头敲不同型号的钉子，而不用过多的考虑敲这颗钉子有什么用。事实上，我们好像也都是这么做的。许多老师在上课的时候，都会推荐两套教材，一套偏重理论和数学推导，一套偏重实际应用。可是，不知道是自己的数学底子太弱的缘故还是其他什么原因，我并不能权衡好这二者的关系。经常出现的一种情况就是：沉迷于推导公式无法自拔，以至于公式推完了，却忘记为什么要推导公式了。这一点在《信号与系统》这门课中尤其明显。我花了大量的时间去了解傅里叶的思想以及傅里叶变换、快速傅里叶变换、拉普拉斯变换、Z变换的推导方法，然而却对于为什么要去推公式没有丝毫印象了。最后的结果当然是“不识庐山真面目”，耗费了心力却一无所得。与之对立的便是，只晓得应用，而完全不愿去考虑其内部原理。我对于机器学习的相关理论基本都是这样的态度，所以在应用中经常出现各种我自己无法解释的错误。 解决方案​ 其实我也明白，找到平衡的点是解决这个问题的关键。但是，在学习的过程中，好像并没有谁来指引我们那个点在哪里。人们总是模糊的说：“既要掌握这个，又要掌握那个”。这种笼统的说法并不能使我信服。天资愚笨的我，只好花更多的时间去“两手抓，两手都要硬”了。 第二个问题​ 说起来，我们专业开的选修课也已经很多了：与计算机相关的数据库、C++、计算机网络、数据结构与算法、操作系统还有数据挖掘，与电子电路相关的：电磁场与电磁波、模拟电路、数字电路、数字信号处理、数字图像处理、随机信号分析、复变函数、信号与系统、电路分析、医学仪器原理、微处理器系统结构与嵌入式设计、信息论，还有一些基础技能课和生物医学导论课：数值分析、数学实验、生理学、解剖学、医学成像原理。说了这么多课程，我只想说明，学的东西真的很杂乱，而且学完之后内心没有真正接纳它们，所以很快这其中的大部分内容我都还给老师了。我不太清楚这是不是一种对生命的浪费，又或者是他们口中的“为了将来找份好工作，拥有好的生活”。但事实上，我并不能欺骗自己的内心。我确确实实迷失了，我不清楚我的“将来”在哪里。 解决方案​ 我想先去人多的地方看看，去见见世面，观察当下社会中他人的生活是怎样的。事实上，我一直是这么做的。我自己的生活方式便是结合了我眼中其他的我认为好的生活方式，并且让自己过得尽量满足。有了模板，我才有机会更好地修正自己的运动轨迹。我从来不觉得人生道路是可以被规划、可以被模仿的。它永远只能被执行并修正。]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[听完“硅谷来信”的感受]]></title>
+    <url>%2Farchives%2Fa3640d93.html</url>
+    <content type="text"><![CDATA[缘起第一次听说吴军老师，是通过那本著名的《数学之美》。这本书简直可以说给我打开了新世界的大门：原来数学与计算机的结合可以产生如此美妙的化学反应！后来利用假期时间，我又陆陆续续看完了《文明之光》、《浪潮之巅》、《智能时代》、《硅谷之谜》和《大学之路》。可以这样说，每一本书都给我带来了非常大的影响，让我了解到很多之前没有了解过的知识和领域。作为一个工科生，看到这些与科学技术相关的文字，内心免不了澎湃。 后来一个偶然的机会，得知吴军老师开了一个付费专栏，每天推送一封信。刚开始我还有点犹豫，毕竟价格稍微有点高，而且很可能我买来以后，就不大愿意听了，变成了“收藏型专栏”。后来转念一想，我内心里还是很想从吴军老师那里获得更多更新的知识的！于是乎，我便开始尝试每天阅读《硅谷来信》。 优秀之人必有闪光之处《硅谷来信》的话题不仅仅局限于科技发展，还介绍了许多吴军老师自己的一些生活经验，或者说是他和他的朋友们走过的那条成功之路。通过和我身边的人对比发现，这些优秀的人都很善于寻找到同类——另外一群优秀的人。这一点也是我现在十分欠缺的。我目前还是习惯于一个人低头做事，以至于交流能力极度退化。还有一点让我印象深刻的是，吴军老师做事情之前非常喜欢从多个学科方向思考，经济学、数学、计算机科学等各个学科的经典思维方式在他那里仿佛融会贯通了一样。这恐怕是多年的理工科科学训练给他带来的一种“本能”。不过，我倒是非常想要学习这样一种本能，因为确确实实这些思维方式是科学家们对于客观世界的一种抽象概括，其本身便具有了某种方法论的属性。因此，运用到生活中也未尝不可，从另一个角度看，也算是学以致用吧！ 未来需要努力的方向在现在这个时代，仅仅低头耕耘自己的一亩三分地是远远不够的，必须时时刻刻抬头看路，开阔眼界，看到自身领域之外的知识。这就需要我要长期保持强烈的好奇心以及充沛的精力，这样才能让自己更好地在这个社会中生存下来。同时不能囿于身边的圈子，有机会应该多多和上一层甚至更高层的圈子的人交流，以期获得新的灵感。]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>吴军</tag>
+        <tag>硅谷</tag>
+        <tag>感想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小记一次Hexo跳坑经历]]></title>
+    <url>%2Farchives%2F4c47623d.html</url>
+    <content type="text"><![CDATA[问题由来在之前的博文中，我需要在文章中添加图片。我刚开始想的办法是直接将图片粘贴在文档里，然后上传（类似Word）。然而上传之后图片都挂了…后来想想这应该是必然，因为图片都还在本地保存着呢，.md文件里引用的是本地的图片路径。这套机制和Word不太一样。 接着我又开始琢磨可不可以把图片提前放到网上，然后在直接引用它的地址。我因为图省事，就没去找图床，想就用自己的github仓库来解决这个问题。同时我又有点强迫症，图片不想乱放，就只想把图片和文档生成的静态页面放在同一目录下。但是问题又出现了。每次只要deploy，图片必挂无疑。嗯，我又想明白了，这个文件夹被覆盖了… 解决方法经过一番搜索，才发现解决此问题的方法非常简单。具体步骤如下： 先将博客配置文件config.yml 里的post_asset_folder:设置为true 然后在博客根目录下执行npm install hexo-asset-image --save ，安装图片上传插件 等待插件安装完毕，在博客根目录下运行hexo new &quot;xxx&quot;来生成.md文件，并且同时会生成一个名为xxx的文件夹 最后，在xxx.md中添加图片时，需要提前把图片复制到xxx这个同名文件夹中，然后在xxx.md中你想要插入图片的地方，按照Markdown的语法输入：![图片的描述文字，可以随意填写](xxx/图片名.jpg)，即可插入图片 总结分析刚入Hexo，感觉各种不适应。从安装到部署，哪里都是坑。希望接下来能在短时间内，把这个玩意的文档通读一遍，然后尽量把这个小窝经营好吧。]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>跳坑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[推荐几个不错的Podcast]]></title>
+    <url>%2Farchives%2F775fbe99.html</url>
+    <content type="text"><![CDATA[Planet Money NPR(美国国家公共广播)最受欢迎的播客节目，开播于2008年金融危机之后。节目内容丰富多彩，基本涉及了经济生活的方方面面。而且语速不算特别快，适合用于泛听练习。 更加良心的是，每一期节目都有对话全文的文本，就在节目播出后几天放出。从这个角度来看，其实它也非常适合用来做日常对话的听写练习。 订阅方式可以直接在其官网上收听，也可也在itunes 上搜索订阅。我个人偏向于在官网上听，因为遇到没听懂的地方，可以直接去看文本。 The Daily 来自纽约时报的新闻播客，每一期专门挑选一件当下的热点时事，花上二十分钟左右进行深度解读（美国国内和国际上的时事都有）。主持人会电话连线在全世界的NYT记者，甚至是采访新闻背后的人物，通过对话的方式，来为听众梳理事件的来龙去脉。我印象最深的是二月份有一期，讲的是AR15为什么会在美国如此泛滥。而节目当时的背景便是佛罗里达高中枪击案。 缺点是只在工作日，周末不更新。但是周末发生的大事，会在周一的节目中提及。 订阅方式 由于某些众所周知的原因，NYT无法正常访问。所以itunes是首选。]]></content>
+      <categories>
+        <category>安利</category>
+      </categories>
+      <tags>
+        <tag>Podcast</tag>
+        <tag>英语学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[一款插件实现Sublime Text 3 中Markdown的实时预览]]></title>
+    <url>%2Farchives%2F2f8e9e15.html</url>
+    <content type="text"><![CDATA[为什么要安利这款插件？在开通这个博客之后，苦于寻找可以在编辑时实时预览的Markdown编辑器，然而最后发现原来手上的Sublime Text 3 可以通过安装插件的形式实现Markdown编辑实时预览。所以刚刚试用完，就用这个插件写了这篇。 接下来是安装步骤：1.打开 command palette (ctrl+shift+p) 2.搜索 Install Package 3.搜索MarkdownLivePreview，按下enter就好了。 使用方法：在编辑Markdown文件时，按下alt+m就行了，它会自动弹出窗口。即实现实时预览。]]></content>
+      <categories>
+        <category>安利</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>Sublime Text 3</tag>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[一些想说又不敢说的话]]></title>
+    <url>%2Farchives%2F8d0ddfe.html</url>
+    <content type="text"><![CDATA[​ ​ 一转眼就大三下学期了，时间总是过得那么快。刚来大学时候还是有许多憧憬和希望，现在和回过头去看，自己想做的事情仿佛都做了，但是也都只是蜻蜓点水罢了。在经历了休学、转专业、生病等一系列事情以后，最初的那点憧憬也慢慢就不知所踪了。我之前一直以为，我遇到的所有问题都只有对或错两个答案，所有当下做出的选择都是经过思考的结果。然而，现实世界里却有着更多的不确定事件。甚至人生路上的一颗小石子，都会硌着我的脚，并且我也拿它没办法。 ​ 大三下的这个春天，我可能要面临到今天为止，我所要经历的最难熬的一段岁月了：否定原先的自己，否定曾经做过的那些事情。做一些别人早就在做的事情，争取看到他们的项背。从头开始审视自己的未来，为几年之后的生活做准备。 ​ 希望几年后，我的生活可以回到正轨上来。虽然我知道，留给我的时间真的不多了。]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[用Hexo时掉过的坑]]></title>
+    <url>%2Farchives%2Fd93ed7b6.html</url>
+    <content type="text"></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[你好，世界！]]></title>
+    <url>%2Farchives%2F5285b14b.html</url>
+    <content type="text"><![CDATA[​ 我需要一个安静的地方，做一些有趣的事情 ​ 这个博客算是一个新的小窝，几个月前也有一个。当时搭好以后开心了两天，和同学以及父母都说了一下，但是仿佛没什么人理我，我也就有点心灰意冷。渐渐地，那个博客就长草了。直到最近，又忽然有人跟我提起这件事，我才想起来我还有个博客。我于是决定重拾写博客的热情。不过这次的动机要简单许多，只是为了记录生活、学习以及之后工作中遇到、想到的各种事情吧。 ​ 我记得TED上有个视频说过，在制定了一个美好的新的人生规划后，最好不要泄露这个目标。有研究表明，当人们谈论他们的雄心壮志后反而不可能实现它。所以这一次我还是默默耕耘这小小的一亩三分地吧。]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+</search>
