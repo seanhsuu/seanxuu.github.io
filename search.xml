@@ -103,9 +103,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[LeetCode题解-27]]></title>
-    <url>%2Farchives%2Feddde878.html</url>
-    <content type="text"><![CDATA[12345678910111213141516class Solution &#123; public int removeElement(int[] nums, int val) &#123; //遍历数组，用数组最后元素替换相同元素，并缩短数组长度 int n=nums.length; int i=0; while(i&lt;n) &#123; if(nums[i]==val) &#123; nums[i]=nums[n-1]; n--; &#125; else &#123; i++; &#125; &#125; return n; &#125;&#125;]]></content>
+    <title><![CDATA[LeetCode题解-94]]></title>
+    <url>%2Farchives%2F97206009.html</url>
+    <content type="text"><![CDATA[12345678910111213141516171819202122232425/** * Definition for a binary tree node. * public class TreeNode &#123; * int val; * TreeNode left; * TreeNode right; * TreeNode(int x) &#123; val = x; &#125; * &#125; */class Solution &#123; public ArrayList&lt;Integer&gt; inorderTraversal(TreeNode root) &#123; ArrayList&lt;Integer&gt; res = new ArrayList&lt;Integer&gt;(); helper(root, res); return res;&#125;private void helper(TreeNode root, ArrayList&lt;Integer&gt; res)&#123; if(root == null) return; helper(root.left,res); res.add(root.val); helper(root.right,res);&#125;&#125;]]></content>
       <categories>
         <category>leetcode</category>
       </categories>
@@ -115,9 +115,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[LeetCode题解-94]]></title>
-    <url>%2Farchives%2F97206009.html</url>
-    <content type="text"><![CDATA[12345678910111213141516171819202122232425/** * Definition for a binary tree node. * public class TreeNode &#123; * int val; * TreeNode left; * TreeNode right; * TreeNode(int x) &#123; val = x; &#125; * &#125; */class Solution &#123; public ArrayList&lt;Integer&gt; inorderTraversal(TreeNode root) &#123; ArrayList&lt;Integer&gt; res = new ArrayList&lt;Integer&gt;(); helper(root, res); return res;&#125;private void helper(TreeNode root, ArrayList&lt;Integer&gt; res)&#123; if(root == null) return; helper(root.left,res); res.add(root.val); helper(root.right,res);&#125;&#125;]]></content>
+    <title><![CDATA[LeetCode题解-27]]></title>
+    <url>%2Farchives%2Feddde878.html</url>
+    <content type="text"><![CDATA[12345678910111213141516class Solution &#123; public int removeElement(int[] nums, int val) &#123; //遍历数组，用数组最后元素替换相同元素，并缩短数组长度 int n=nums.length; int i=0; while(i&lt;n) &#123; if(nums[i]==val) &#123; nums[i]=nums[n-1]; n--; &#125; else &#123; i++; &#125; &#125; return n; &#125;&#125;]]></content>
       <categories>
         <category>leetcode</category>
       </categories>
