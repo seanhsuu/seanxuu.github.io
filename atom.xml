@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://seanxuu.github.io/"/>
-  <updated>2021-07-04T07:05:09.000Z</updated>
+  <updated>2021-07-06T03:13:18.000Z</updated>
   <id>https://seanxuu.github.io/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高并发下的幂等性</title>
+    <link href="https://seanxuu.github.io/archives/5ea428eb.html"/>
+    <id>https://seanxuu.github.io/archives/5ea428eb.html</id>
+    <published>2021-07-06T03:13:18.000Z</published>
+    <updated>2021-07-06T03:13:18.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>boring</title>
@@ -482,31 +496,6 @@
       <category term="leetcode" scheme="https://seanxuu.github.io/tags/leetcode/"/>
     
       <category term="algorithm" scheme="https://seanxuu.github.io/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于当下自我状况的思考</title>
-    <link href="https://seanxuu.github.io/archives/e182c17d.html"/>
-    <id>https://seanxuu.github.io/archives/e182c17d.html</id>
-    <published>2018-05-05T01:47:14.000Z</published>
-    <updated>2018-05-05T01:47:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="问题的出现"><a href="#问题的出现" class="headerlink" title="问题的出现"></a>问题的出现</h2><p>​    在大学将近三年的学习中，我学过的科目越来越多，难度也依次加大，但是自己的学习方法好像没有特别大的改进，所以效率并不算太高，学习的时候没有了高中时候的那种目标感，并不清楚自己学习这些知识的用处是什么。难道仅仅是为了毕业？不，这不是我想要的！我不想白白把自己的时间荒废在一些无趣的事情上面。所以我开始想了一想我现在的处境以及面临的问题。</p><p>​    虽然我的专业名称是生物医学工程，但是仿佛应该叫做生物医学电子信息工程，因为大多数时候我所接受的教育都在告诉我如何通过电子信息工程方法去解决医学问题。这就让我产生了<strong>第一个疑惑：电子工程里的各种思维方法能不能支撑我在这个专业里走的更远？</strong> <strong>我的第二个疑惑其实很简单：电子信息工程这个大的框架下还有许多小的方向，那么我是不是也应该在课下学习更多不同的学科知识，拓宽自己的眼界？</strong> </p><h2 id="关于这些问题的一些思考"><a href="#关于这些问题的一些思考" class="headerlink" title="关于这些问题的一些思考"></a>关于这些问题的一些思考</h2><h3 id="第一个问题"><a href="#第一个问题" class="headerlink" title="第一个问题"></a>第一个问题</h3><p>​    我所理解到的工科思维仅仅停留在：用趁手的榔头敲不同型号的钉子，而不用过多的考虑敲这颗钉子有什么用。事实上，我们好像也都是这么做的。许多老师在上课的时候，都会推荐两套教材，一套偏重理论和数学推导，一套偏重实际应用。可是，不知道是自己的数学底子太弱的缘故还是其他什么原因，我并不能权衡好这二者的关系。经常出现的一种情况就是：沉迷于推导公式无法自拔，以至于公式推完了，却忘记为什么要推导公式了。这一点在《信号与系统》这门课中尤其明显。我花了大量的时间去了解傅里叶的思想以及傅里叶变换、快速傅里叶变换、拉普拉斯变换、Z变换的推导方法，然而却对于为什么要去推公式没有丝毫印象了。最后的结果当然是“不识庐山真面目”，耗费了心力却一无所得。与之对立的便是，只晓得应用，而完全不愿去考虑其内部原理。我对于机器学习的相关理论基本都是这样的态度，所以在应用中经常出现各种我自己无法解释的错误。</p><h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><p>​    其实我也明白，找到平衡的点是解决这个问题的关键。但是，在学习的过程中，好像并没有谁来指引我们那个点在哪里。人们总是模糊的说：“既要掌握这个，又要掌握那个”。这种笼统的说法并不能使我信服。天资愚笨的我，只好花更多的时间去“两手抓，两手都要硬”了。</p><h3 id="第二个问题"><a href="#第二个问题" class="headerlink" title="第二个问题"></a>第二个问题</h3><p>​    说起来，我们专业开的选修课也已经很多了：与计算机相关的数据库、C++、计算机网络、数据结构与算法、操作系统还有数据挖掘，与电子电路相关的：电磁场与电磁波、模拟电路、数字电路、数字信号处理、数字图像处理、随机信号分析、复变函数、信号与系统、电路分析、医学仪器原理、微处理器系统结构与嵌入式设计、信息论，还有一些基础技能课和生物医学导论课：数值分析、数学实验、生理学、解剖学、医学成像原理。说了这么多课程，我只想说明，学的东西真的很杂乱，而且学完之后内心没有真正接纳它们，所以很快这其中的大部分内容我都还给老师了。我不太清楚这是不是一种对生命的浪费，又或者是他们口中的“为了将来找份好工作，拥有好的生活”。但事实上，我并不能欺骗自己的内心。我确确实实迷失了，我不清楚我的“将来”在哪里。</p><h4 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a>解决方案</h4><p>​    我想先去人多的地方看看，去见见世面，观察当下社会中他人的生活是怎样的。事实上，我一直是这么做的。我自己的生活方式便是结合了我眼中其他的我认为好的生活方式，并且让自己过得尽量满足。有了模板，我才有机会更好地修正自己的运动轨迹。我从来不觉得人生道路是可以被规划、可以被模仿的。它永远只能被执行并修正。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;问题的出现&quot;&gt;&lt;a href=&quot;#问题的出现&quot; class=&quot;headerlink&quot; title=&quot;问题的出现&quot;&gt;&lt;/a&gt;问题的出现&lt;/h2&gt;&lt;p&gt;​    在大学将近三年的学习中，我学过的科目越来越多，难度也依次加大，但是自己的学习方法好像没有特别大的改进，所以
-      
-    
-    </summary>
-    
-      <category term="随想" scheme="https://seanxuu.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
-    
-    
-      <category term="学习" scheme="https://seanxuu.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
