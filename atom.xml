@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://seanxuu.github.io/"/>
-  <updated>2021-07-07T04:40:36.000Z</updated>
+  <updated>2021-07-10T01:31:43.000Z</updated>
   <id>https://seanxuu.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>收费自习室</title>
+    <link href="https://seanxuu.github.io/archives/79971ce0.html"/>
+    <id>https://seanxuu.github.io/archives/79971ce0.html</id>
+    <published>2021-07-10T01:31:43.000Z</published>
+    <updated>2021-07-10T01:31:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>来深圳以后第一次来这种收费自习室。有一说一，环境蛮好的。还是挺推荐来的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;来深圳以后第一次来这种收费自习室。有一说一，环境蛮好的。还是挺推荐来的。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>吐槽一下代码扫描</title>
+    <link href="https://seanxuu.github.io/archives/196160de.html"/>
+    <id>https://seanxuu.github.io/archives/196160de.html</id>
+    <published>2021-07-07T04:45:05.000Z</published>
+    <updated>2021-07-07T04:45:05.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>git checkout 命令的使用</title>
@@ -365,33 +401,6 @@
   </entry>
   
   <entry>
-    <title>LeetCode题解-94</title>
-    <link href="https://seanxuu.github.io/archives/97206009.html"/>
-    <id>https://seanxuu.github.io/archives/97206009.html</id>
-    <published>2018-11-27T06:16:09.000Z</published>
-    <updated>2018-11-27T06:16:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * public class TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode left;</span></span><br><span class="line"><span class="comment"> *     TreeNode right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ArrayList&lt;Integer&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">    ArrayList&lt;Integer&gt; res = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">    helper(root, res);</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">helper</span><span class="params">(TreeNode root, ArrayList&lt;Integer&gt; res)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root == <span class="keyword">null</span>)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    helper(root.left,res);</span><br><span class="line">    res.add(root.val);</span><br><span class="line">    helper(root.right,res);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
-      
-    
-    </summary>
-    
-      <category term="leetcode" scheme="https://seanxuu.github.io/categories/leetcode/"/>
-    
-    
-      <category term="leetcode" scheme="https://seanxuu.github.io/tags/leetcode/"/>
-    
-      <category term="algorithm" scheme="https://seanxuu.github.io/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>LeetCode题解-27</title>
     <link href="https://seanxuu.github.io/archives/eddde878.html"/>
     <id>https://seanxuu.github.io/archives/eddde878.html</id>
@@ -419,13 +428,13 @@
   </entry>
   
   <entry>
-    <title>LeetCode题解-26</title>
-    <link href="https://seanxuu.github.io/archives/9adad8ee.html"/>
-    <id>https://seanxuu.github.io/archives/9adad8ee.html</id>
-    <published>2018-11-27T06:15:55.000Z</published>
-    <updated>2018-11-27T06:15:55.000Z</updated>
+    <title>LeetCode题解-94</title>
+    <link href="https://seanxuu.github.io/archives/97206009.html"/>
+    <id>https://seanxuu.github.io/archives/97206009.html</id>
+    <published>2018-11-27T06:16:09.000Z</published>
+    <updated>2018-11-27T06:16:09.000Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">removeDuplicates</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> ( <span class="keyword">int</span> i = <span class="number">1</span>; i &lt; nums.length; i ++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[i] != nums[j])&#123;</span><br><span class="line">                    nums[j+<span class="number">1</span>]=nums[i];</span><br><span class="line">                    sum++;</span><br><span class="line">                    j++;</span><br><span class="line">                &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * public class TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode left;</span></span><br><span class="line"><span class="comment"> *     TreeNode right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ArrayList&lt;Integer&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">    ArrayList&lt;Integer&gt; res = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">    helper(root, res);</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">helper</span><span class="params">(TreeNode root, ArrayList&lt;Integer&gt; res)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root == <span class="keyword">null</span>)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    helper(root.left,res);</span><br><span class="line">    res.add(root.val);</span><br><span class="line">    helper(root.right,res);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -442,33 +451,6 @@
       <category term="leetcode" scheme="https://seanxuu.github.io/tags/leetcode/"/>
     
       <category term="algorithm" scheme="https://seanxuu.github.io/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Win10环境下完美卸载MySQL</title>
-    <link href="https://seanxuu.github.io/archives/59a4b6ee.html"/>
-    <id>https://seanxuu.github.io/archives/59a4b6ee.html</id>
-    <published>2018-10-21T02:04:51.000Z</published>
-    <updated>2018-10-21T02:04:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>​    最近在使用MySQL的时候，遇到一个很棘手的问题——MySQL的服务总是开启不了。在网上搜索了多种办法，依然没法解决。所以我想干脆就重装MySQL算了。由于之前听说MySQL容易卸载不干净，所以我就想了一下之前完美卸载multisim的方法和步骤，照葫芦画瓢。最后还真的成功了！具体方法如下：</p><h3 id="1-停止MySQL服务。"><a href="#1-停止MySQL服务。" class="headerlink" title="1.  停止MySQL服务。"></a>1.  停止MySQL服务。</h3><p>   任务管理器→服务→找到MySQL服务，停止掉。</p><h3 id="2-卸载MySQL-server。"><a href="#2-卸载MySQL-server。" class="headerlink" title="2.  卸载MySQL server。"></a>2.  卸载MySQL server。</h3><p>   在控制面板中卸载。</p><h3 id="3-将MySQL安装目录下的MySQL文件夹删除。"><a href="#3-将MySQL安装目录下的MySQL文件夹删除。" class="headerlink" title="3.  将MySQL安装目录下的MySQL文件夹删除。"></a>3.  将MySQL安装目录下的MySQL文件夹删除。</h3><p>   如果删除不掉，就利用文件粉碎器粉碎。</p><p>   打开注册表，分别找到以下文件夹,删除（如果没有相应的文件夹，就忽略掉）</p><p>   <em>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\MySQL</em></p><p>   <em>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\Eventlog\Application\MySQL</em></p><p>   <em>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL**</em></p><h3 id="4-删除C-ProgramData-MySQL-文件夹"><a href="#4-删除C-ProgramData-MySQL-文件夹" class="headerlink" title="4.  删除C:\ProgramData\MySQL 文件夹"></a>4.  删除C:\ProgramData\MySQL 文件夹</h3><p>注意这个文件夹默认是隐藏的。</p><h3 id="5-为确保万无一失，需要再检查MySQL服务是否存在，若存在便利用在cmd中输入“sc-delete-xxxxx”删除服务（xxxxx是你要删除的服务名）。"><a href="#5-为确保万无一失，需要再检查MySQL服务是否存在，若存在便利用在cmd中输入“sc-delete-xxxxx”删除服务（xxxxx是你要删除的服务名）。" class="headerlink" title="5.  为确保万无一失，需要再检查MySQL服务是否存在，若存在便利用在cmd中输入“sc delete xxxxx”删除服务（xxxxx是你要删除的服务名）。"></a>5.  为确保万无一失，需要再检查MySQL服务是否存在，若存在便利用在cmd中输入“sc delete xxxxx”删除服务（xxxxx是你要删除的服务名）。</h3><h3 id="6-最后便可以重装MySQL了。"><a href="#6-最后便可以重装MySQL了。" class="headerlink" title="6. 最后便可以重装MySQL了。"></a>6. 最后便可以重装MySQL了。</h3>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;​    最近在使用MySQL的时候，遇到一个很棘手的问题——MySQL的服务总是开启不了。在网上搜索了多种办法，依然没法解决。所以我想干脆就重装MySQL算了。由于之前听说MySQL容易卸载不干净，所以我就想了一下之前完美卸载multisim的方法和步骤，照葫芦画瓢。最后
-      
-    
-    </summary>
-    
-      <category term="MySQL" scheme="https://seanxuu.github.io/categories/MySQL/"/>
-    
-    
-      <category term="MySQL" scheme="https://seanxuu.github.io/tags/MySQL/"/>
-    
-      <category term="完美卸载" scheme="https://seanxuu.github.io/tags/%E5%AE%8C%E7%BE%8E%E5%8D%B8%E8%BD%BD/"/>
     
   </entry>
   
